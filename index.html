@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c950819b99.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <h1 class="name">Rakshit Sawarn</h1>
+
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="close-icon"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>  
+            </nav>
+            <div class="img">
+                <img src="images/me.jpg"width="30%" height="30%">
+            </div>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1 class="hed">Hi, I am <span>Rakshit Sawarn</span> <br>from NIIT University</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------About------------------------------------------------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Rakshit Sawarn, currently pursuing my B.Tech in Computer Science and Engineering from NIIT
+                        University. I am a dedicated and passionate developer with a strong focus on Web Development,
+                        Android Development, Java, and Python. My journey has been enriched with hands-on experience
+                        through internships in Web Development, Android Development, Java Development, and Content
+                        Writing. Additionally, I have honed my skills as a freelancer, successfully completing numerous
+                        projects across these domains.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Android App Development</li>
+                            <li><span>Java</span><br>Java Development</li>
+                            <li><span>Python</span><br>Python Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Prodigy Infotech</span><br>Internship at Web Development</li>
+                            <li><span>Oasis Infobyte</span><br>Internship at App Development</li>
+                            <li><span>Tech Octanet</span><br>Internship in Java Development</li>
+                            <li><span>CodSoft</span><br>Internship in App Development</li>
+                            <li><span>Freelancer</span><br>Freelancer on Workify and offline freelancer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>NIIT University</li>
+                            <li><span>Web Development</span><br>Great Learning</li>
+                            <li><span>App Development</span><br>Great Learning</li>
+                            <li><span>10th</span><br>Sitamarhi Central School</li>
+                            <li><span>12th</span><br>ROS Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------Services------------------------------------------------------>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab(event, 'Website')">Website</p>
+                <p class="tab-links" onclick="opentab(event, 'Android App')">App</p>
+                <p class="tab-links" onclick="opentab(event, 'Programming Languages')">Programming Languages</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="Website">
+                <i class="fa-brands fa-webflow"></i>
+                <ul>
+                    <li><span>Web Designing</span><br>Designing Web interfaces</li>
+                    <li><span>Web Development</span><br>Web Development</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="Android App">
+                <i class="fa-brands fa-app-store"></i>
+                <ul>
+                    <li><span>App Designing</span><br>Designing App Interfaces</li>
+                    <li><span>App Developing</span><br>Development of Android Apps</li>
+                </ul>
+            </div>
+
+            
+            <div class="tab-contents" id="Programming Languages">
+                <i class="fa-solid fa-code"></i>
+                <ul>
+                    <li><span>Java</span><br>Basic Java Development <br> Back-End Development</li>
+                    <li><span>Python</span><br>Basic Python Development <br> Data Analysis</li>
+                    <li><span>C</span><br>Basic C development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------Projects---------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Some Projects</h1>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Counterfeit Detection App</h3>
+                    <p>This app willl help you in identifying the counterfeit products</p>
+                    <p class="p2">Link will available soon</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" >
+
+                <div class="layer">
+                    <h3>JARVIS</h3>
+                    <p>Your Personal Assistent</p>
+                    <p class="p2">Link will available soon</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Shopping Website</h3>
+                    <p>This website will help you in doing shopping of medicines</p>
+                    <a href="https://comforting-cat-d0916e.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------Contact---------------->
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">My Contacts</h1>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/rakshit-sawarn-039410250/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:rakshitsawarn@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                <a href="tel:+91 7479687456" target="_blank"><i class="fa-thin fa-phone-volume"></i></a>
+                <a href="https://wa.me/7479687456?text=Hello%20Rakshit!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <a href="images/My CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        const menuIcon = document.getElementById("menu-icon");
+        const closeIcon = document.getElementById("close-icon");
+        const navbar = document.getElementById("navbar");
+        const navLinks = navbar.querySelectorAll("ul li a");
+
+        menuIcon.addEventListener("click", () => {
+            navbar.classList.add("open");
+        });
+
+        closeIcon.addEventListener("click", () => {
+            navbar.classList.remove("open");
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                navbar.classList.remove("open");
+            });
+        });
+    </script>
+</body>
+
+</html>
